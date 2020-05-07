@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NoThering</string>
+    <string name="underlined"><u>CATEGORIES</u></string>
+    <string name="signUpText">Sign Up!</string>
+    <string name="loginLink">Already have an account?</string>
+    <string name="signInText">Sign In</string>
+</resources>

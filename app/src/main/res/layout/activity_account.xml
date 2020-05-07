@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AccountActivity">
+
+    <EditText
+        android:id="@+id/loggedEmail"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_below="@+id/loggedEmail"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Account Fragment"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:text="Logout"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/txt"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/deleteAccount"
+        android:text="Delete Account"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/logoutBtn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btmNavView"
+        app:itemBackground="@color/colorPrimary"
+        android:background="@color/colorPrimary"
+        app:itemTextColor="#fff"
+        app:itemIconTint="#fff"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_items"/>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemCategory"
+        android:title="Categories"
+        android:icon="@drawable/categories"/>
+
+    <item
+        android:id="@+id/itemNotifications"
+        android:title="Notifications"
+        android:icon="@drawable/notifications"/>
+
+
+    <item
+        android:id="@+id/itemMyCart"
+        android:title="My Cart"
+        android:icon="@drawable/cart"/>
+
+    <item
+        android:id="@+id/itemMyAccount"
+        android:title="My Account"
+        android:icon="@drawable/account"/>
+
+
+</menu>
