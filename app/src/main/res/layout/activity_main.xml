@@ -7,136 +7,148 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--Header Layout-->
-    <LinearLayout
-        android:id="@+id/titleLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#9ED7D9"
-        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:padding="10dp"
-            android:text="NoThering"
-            android:textSize="60sp"
-            android:textStyle="bold" />
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="20dp"
-            android:text="We are there for you...."
-            android:textSize="20sp" />
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="58dp"
-            android:layout_marginRight="20dp"
-            android:text="@string/underlined"
-            android:textSize="50sp"
-            android:textStyle="bold" />
-
-
-    </LinearLayout>
 
     <!--Categories Body Layout-->
     <ScrollView
         android:id="@+id/categoriesBodyLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/titleLayout"
         android:layout_above="@+id/btmNavView"
         android:background="#D1EEEE"
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_width="match_parent"
             android:orientation="vertical">
 
-            <!--Pharmacy Cardview-->
-            <androidx.cardview.widget.CardView
-                android:layout_marginBottom="12dp"
-                android:id="@+id/pharmacyCard"
-                android:layout_width="wrap_content"
+            <!--Header Layout-->
+            <LinearLayout
+                android:id="@+id/titleLayout"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="35dp"
-                app:cardBackgroundColor="#9ED7D9"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="15dp">
+                android:background="#9ED7D9"
+                android:orientation="vertical">
 
-                <LinearLayout
-                    android:padding="10dp"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/pharmacyImage"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/pharmacy" />
-
-                    <TextView
-                        android:id="@+id/pharmacyLabel"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="PHARMACY"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!--Groocery card-->
-            <androidx.cardview.widget.CardView
-                android:layout_marginBottom="12dp"
-                android:id="@+id/groceryCard"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="35dp"
-                app:cardBackgroundColor="#9ED7D9"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="15dp">
-
-                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
                     android:padding="10dp"
+                    android:text="NoThering"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="20dp"
+                    android:text="We are there for you...."
+                    android:textSize="20sp" />
 
-                    <ImageView
-                        android:id="@+id/groceryImage"
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="58dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/underlined"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Pharmacy Cardview-->
+                <androidx.cardview.widget.CardView
+                    android:layout_marginBottom="12dp"
+                    android:id="@+id/pharmacyCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    app:cardBackgroundColor="#9ED7D9"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="15dp">
+
+                    <LinearLayout
+                        android:padding="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/grocery"/>
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/groceryLabel"
+                        <ImageView
+                            android:id="@+id/pharmacyImage"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/pharmacy" />
+
+                        <TextView
+                            android:id="@+id/pharmacyLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="PHARMACY"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--Groocery card-->
+                <androidx.cardview.widget.CardView
+                    android:layout_marginBottom="12dp"
+                    android:id="@+id/groceryCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    app:cardBackgroundColor="#9ED7D9"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="15dp">
+
+                    <LinearLayout
+                        android:padding="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="GROCERY"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
+                        android:orientation="vertical">
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:id="@+id/groceryImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/grocery"/>
+
+                        <TextView
+                            android:id="@+id/groceryLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="GROCERY"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
         </LinearLayout>
+
+
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

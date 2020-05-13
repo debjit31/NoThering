@@ -16,129 +16,138 @@
     android:layout_centerInParent="true"/>
 
 
-    <!--Header Layout-->
-    <LinearLayout
-        android:id="@+id/titleLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:background="#9ED7D9"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:padding="10dp"
-            android:text="NoThering"
-            android:textSize="60sp"
-            android:textStyle="bold" />
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="25dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="20dp"
-            android:text="We are there for you...."
-            android:textSize="20sp" />
-
-
-    </LinearLayout>
-
     <ScrollView
         android:id="@+id/signInBody"
-        android:layout_below="@+id/titleLayout"
         android:background="#D1EEEE"
         android:layout_height="match_parent"
         android:layout_width="match_parent">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_height="match_parent"
-            android:layout_width="match_parent">
+            android:layout_width="match_parent"
+            android:orientation="vertical">
 
-            <!--ImageView Layout-->
-           <LinearLayout
-               android:layout_height="wrap_content"
-               android:background="#9ED7D9"
-               android:layout_marginBottom="20dp"
-               android:layout_width="wrap_content"
-               android:layout_marginTop="55dp"
-               android:layout_gravity="center">
-
-               <de.hdodenhof.circleimageview.CircleImageView
-                   android:layout_height="wrap_content"
-                   android:layout_width="wrap_content"
-                   android:src="@drawable/profile" />
-           </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
+            <!--Header Layout-->
+            <LinearLayout
+                android:id="@+id/titleLayout"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="20dp"
-                android:text="@string/signInText"
-                android:textSize="50sp"
-                android:textStyle="bold" />
+                android:padding="20dp"
+                android:background="#9ED7D9"
+                android:orientation="vertical">
 
-            <!--Email-->
-            <EditText
-            android:id="@+id/userEmail"
-            android:layout_width="360dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="13dp"
-            android:background="#fff"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:padding="15dp"
-            android:textColor="#1E7373"
-            android:textColorHint="#1E7373"
-            android:textSize="25sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:padding="10dp"
+                    android:text="NoThering"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
 
-            <!---password-->
-            <EditText
-                android:id="@+id/userPassword"
-                android:layout_width="360dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="13dp"
-                android:background="#fff"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:padding="15dp"
-                android:textColor="#1E7373"
-                android:textColorHint="#1E7373"
-                android:textSize="25sp" />
 
-            <ImageButton
-            android:id="@+id/signInBtn"
-            android:layout_marginTop="6dp"
-            android:layout_marginBottom="10dp"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/nextbtn"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="We are there for you...."
+                    android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/signUpLink"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="100dp"
-                android:textSize="20sp"
-                android:textColor="#1E7373"
-                android:text="Don't have an account? Sign up here"/>
 
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <!--ImageView Layout-->
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:background="#9ED7D9"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:layout_gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/profile" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/signInText"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
+
+                <!--Email-->
+                <EditText
+                    android:id="@+id/userEmail"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="13dp"
+                    android:background="#fff"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:textColor="#1E7373"
+                    android:textColorHint="#1E7373"
+                    android:textSize="25sp" />
+
+                <!---password-->
+                <EditText
+                    android:id="@+id/userPassword"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="13dp"
+                    android:background="#fff"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColor="#1E7373"
+                    android:textColorHint="#1E7373"
+                    android:textSize="25sp" />
+
+                <ImageButton
+                    android:id="@+id/signInBtn"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/nextbtn"/>
+
+                <TextView
+                    android:id="@+id/signUpLink"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="100dp"
+                    android:textSize="20sp"
+                    android:textColor="#1E7373"
+                    android:text="Don't have an account? Sign up here"/>
+
+
+            </LinearLayout>
 
         </LinearLayout>
+
+
 
 
     </ScrollView>
