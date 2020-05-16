@@ -6,43 +6,182 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".AccountActivity">
 
-    <EditText
-        android:id="@+id/loggedEmail"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="50dp"
-        android:layout_centerInParent="true"/>
+    <ScrollView
+        android:layout_above="@+id/btmNavView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--Account Header-->
+            <LinearLayout
+                android:id="@+id/titleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:background="#9ED7D9"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:padding="10dp"
+                    android:text="NoThering"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
 
 
-    <TextView
-        android:id="@+id/txt"
-        android:layout_below="@+id/loggedEmail"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Account Fragment"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_centerInParent="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="We are there for you...."
+                    android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/logoutBtn"
-        android:text="Logout"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/txt"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"/>
 
-    <Button
-        android:id="@+id/deleteAccount"
-        android:text="Delete Account"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/logoutBtn"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"/>
+            </LinearLayout>
+
+            <!--Account Body-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleLayout"
+                android:background="#D1EEEE"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/accountImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/profile" />
+
+                    <TextView
+                        android:id="@+id/accountName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/accountImage"
+                        android:text="AcountHolderName"
+                        android:textSize="28sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAccountDetails"
+                        android:layout_width="370dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="#9ED7D9"
+                        android:padding="10dp"
+                        android:text="Account Details"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/tvMyHistory"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="#9ED7D9"
+                        android:padding="10dp"
+                        android:text="My History"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/tvRecentSearches"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="#9ED7D9"
+                        android:padding="10dp"
+                        android:text="Recent Searches"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/tvHelp"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="#9ED7D9"
+                        android:padding="10dp"
+                        android:text="Help"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/tvContactUs"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="#9ED7D9"
+                        android:padding="10dp"
+                        android:text="Contact Us"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/tvSignOut"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="#9ED7D9"
+                        android:padding="10dp"
+                        android:text="Sign Out"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
